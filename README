@@ -1,0 +1,4 @@
+A slightly optimized version of the AES-128 encryption algorithm, -192 and -256 not currently supported. Folder includes key1.key and key2.key for testing purposes.
+aes_util contains the different encryption steps as functions. I moved them all inline into aes_threads early in development to reduce # of function calls, so now it is only used for the precomputed byte substitution table.
+
+Usage: ./aes.exe [input_filename] [-e|-d] [--key=key_filename] [(optional) --out=output_filename]
